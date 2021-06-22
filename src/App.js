@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { Switch, Route } from "react-router-dom";
+import ListCountries from "./ListCountries";
+import DisplayCurrency from "./DisplayCurrency";
+import Header from "./Header";
 
 function App() {
+  const [countries, setCountries] = useState([]);
+  const abortController = new AbortController();
+  const signal = abortController.signal;
+  useEffect(() => {
+    async function getCountries(){
+      const response = await fetch("https://restcountries.eu/rest/v2/all", signal)
+      setCountries(await response.json())
+    }
+    getCountries();
+
+    return () => {
+      abortController.abort();
+    }
+  }, [])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Switch>
+      <Route exact path="/">
+        <Header />
+        <ListCountries countries={countries} />
+      </Route>
+      <Route path="/currency/:country">
+        <DisplayCurrency countries={countries}/>
+      </Route>
+    </Switch>
+  )
 }
 
 export default App;
