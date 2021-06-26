@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.js": "/bloggers-r-us/static/js/main.d682c99d.chunk.js",
-    "main.js.map": "/bloggers-r-us/static/js/main.d682c99d.chunk.js.map",
+    "main.css": "/bloggers-r-us/static/css/main.d5e195d4.chunk.css",
+    "main.js": "/bloggers-r-us/static/js/main.cab9f29d.chunk.js",
+    "main.js.map": "/bloggers-r-us/static/js/main.cab9f29d.chunk.js.map",
     "runtime-main.js": "/bloggers-r-us/static/js/runtime-main.d3d6c51f.js",
     "runtime-main.js.map": "/bloggers-r-us/static/js/runtime-main.d3d6c51f.js.map",
-    "static/js/2.552b78c0.chunk.js": "/bloggers-r-us/static/js/2.552b78c0.chunk.js",
-    "static/js/2.552b78c0.chunk.js.map": "/bloggers-r-us/static/js/2.552b78c0.chunk.js.map",
+    "static/js/2.5ab7e194.chunk.js": "/bloggers-r-us/static/js/2.5ab7e194.chunk.js",
+    "static/js/2.5ab7e194.chunk.js.map": "/bloggers-r-us/static/js/2.5ab7e194.chunk.js.map",
     "index.html": "/bloggers-r-us/index.html",
-    "static/js/2.552b78c0.chunk.js.LICENSE.txt": "/bloggers-r-us/static/js/2.552b78c0.chunk.js.LICENSE.txt"
+    "static/css/main.d5e195d4.chunk.css.map": "/bloggers-r-us/static/css/main.d5e195d4.chunk.css.map",
+    "static/js/2.5ab7e194.chunk.js.LICENSE.txt": "/bloggers-r-us/static/js/2.5ab7e194.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d3d6c51f.js",
-    "static/js/2.552b78c0.chunk.js",
-    "static/js/main.d682c99d.chunk.js"
+    "static/js/2.5ab7e194.chunk.js",
+    "static/css/main.d5e195d4.chunk.css",
+    "static/js/main.cab9f29d.chunk.js"
   ]
 }
