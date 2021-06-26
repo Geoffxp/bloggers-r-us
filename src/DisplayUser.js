@@ -1,6 +1,8 @@
 import ListPosts from "./ListPosts"
+import { useMediaQuery } from 'react-responsive';
 
 export default function DisplayUser({ user, id, url, posts, setPosts }){
+
     async function getPosts(){
         const response = await fetch(`${url}/${id}/posts`)
         setPosts(await response.json());
@@ -13,8 +15,8 @@ export default function DisplayUser({ user, id, url, posts, setPosts }){
     if(posts.length){
         return (
             <>
-            <div className="card container w-50 text-center d-flex flex-row justify-content-between">
-                <h2 className="card-title m-2">{user.name}</h2>
+            <div className="card container text-center d-flex flex-row justify-content-between">
+                <h3 className="card-title m-2">{user.name}</h3>
                 {(!(id === posts[0].userId)) ? <button className="btn btn-info" onClick={getPosts}>Posts</button> :
                 <button className="btn btn-secondary" onClick={hidePosts}>Hide</button>}
             </div>
@@ -25,11 +27,10 @@ export default function DisplayUser({ user, id, url, posts, setPosts }){
         )
     } else {
         return (
-            <div className="card container w-50 text-center d-flex flex-row justify-content-between">
-                <h2 className="card-title m-2">{user.name}</h2>
+            <div className="card container text-center d-flex flex-row justify-content-between">
+                <h3 className="card-title m-2">{user.name}</h3>
                 <button className="btn btn-info" onClick={getPosts}>Posts</button>
             </div>
         )
     }
-    
 }
