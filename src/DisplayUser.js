@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom"
 import ListPosts from "./ListPosts"
 
 export default function DisplayUser({ user, id, url, posts, setPosts }){
