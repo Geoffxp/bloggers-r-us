@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/Geoffxp/bloggers-r-us/static/js/main.ec0f9165.chunk.js",
-    "main.js.map": "/Geoffxp/bloggers-r-us/static/js/main.ec0f9165.chunk.js.map",
-    "runtime-main.js": "/Geoffxp/bloggers-r-us/static/js/runtime-main.d167e21c.js",
-    "runtime-main.js.map": "/Geoffxp/bloggers-r-us/static/js/runtime-main.d167e21c.js.map",
-    "static/js/2.552b78c0.chunk.js": "/Geoffxp/bloggers-r-us/static/js/2.552b78c0.chunk.js",
-    "static/js/2.552b78c0.chunk.js.map": "/Geoffxp/bloggers-r-us/static/js/2.552b78c0.chunk.js.map",
-    "index.html": "/Geoffxp/bloggers-r-us/index.html",
-    "static/js/2.552b78c0.chunk.js.LICENSE.txt": "/Geoffxp/bloggers-r-us/static/js/2.552b78c0.chunk.js.LICENSE.txt"
+    "main.js": "/bloggers-r-us/static/js/main.d682c99d.chunk.js",
+    "main.js.map": "/bloggers-r-us/static/js/main.d682c99d.chunk.js.map",
+    "runtime-main.js": "/bloggers-r-us/static/js/runtime-main.d3d6c51f.js",
+    "runtime-main.js.map": "/bloggers-r-us/static/js/runtime-main.d3d6c51f.js.map",
+    "static/js/2.552b78c0.chunk.js": "/bloggers-r-us/static/js/2.552b78c0.chunk.js",
+    "static/js/2.552b78c0.chunk.js.map": "/bloggers-r-us/static/js/2.552b78c0.chunk.js.map",
+    "index.html": "/bloggers-r-us/index.html",
+    "static/js/2.552b78c0.chunk.js.LICENSE.txt": "/bloggers-r-us/static/js/2.552b78c0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d167e21c.js",
+    "static/js/runtime-main.d3d6c51f.js",
     "static/js/2.552b78c0.chunk.js",
-    "static/js/main.ec0f9165.chunk.js"
+    "static/js/main.d682c99d.chunk.js"
   ]
 }
