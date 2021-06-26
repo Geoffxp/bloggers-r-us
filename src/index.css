@@ -10,10 +10,18 @@
 
 @media (max-width: 768px) {
     .container {
-        width: 100%;
+        width: 90%;
     }
     h3 {
         font-size: 20pt !important;
+    }
+}
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30pt !important;
+    }
+    h3 {
+        font-size: 17pt !important;
     }
 }
 @media (max-width: 400px) {
