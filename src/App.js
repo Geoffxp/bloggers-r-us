@@ -1,35 +1,32 @@
 import React, { useState, useEffect } from "react";
-import { Switch, Route } from "react-router-dom";
-import ListCountries from "./ListCountries";
-import DisplayCurrency from "./DisplayCurrency";
+import ListUsers from "./ListUsers";
 import Header from "./Header";
 
 function App() {
-  const [countries, setCountries] = useState([]);
+  const url = "https://jsonplaceholder.typicode.com/users"
+  const [users, setUsers] = useState([])
+  const [posts, setPosts] = useState([]);
   const abortController = new AbortController();
   const signal = abortController.signal;
   useEffect(() => {
-    async function getCountries(){
-      const response = await fetch("https://restcountries.eu/rest/v2/all", signal)
-      setCountries(await response.json())
+    async function getUsers(){
+      const response = await fetch(url, signal)
+      setUsers(await response.json())
     }
-    getCountries();
+    getUsers();
 
     return () => {
       abortController.abort();
     }
   }, [])
+
+
   
   return (
-    <Switch>
-      <Route exact path="/">
-        <Header />
-        <ListCountries countries={countries} />
-      </Route>
-      <Route path="/currency/:country">
-        <DisplayCurrency countries={countries}/>
-      </Route>
-    </Switch>
+    <>
+      <Header />
+      <ListUsers users={users} url={url} posts={posts} setPosts={setPosts} />
+    </>
   )
 }
 

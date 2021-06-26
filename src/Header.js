@@ -1,9 +1,9 @@
 export default function Header(){
     return (
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Countries and Money</h1>
-                <p class="lead">Everything you need to know about currencies.</p>
+        <div className="jumbotron jumbotron-fluid">
+            <div className="container">
+                <h1 className="display-4">Bloggers-R-Us</h1>
+                <p className="lead">A place for random posts</p>
             </div>
         </div>
     )
